@@ -11,35 +11,48 @@
       <title>creativemmafinn resume</title>
 <!-- below is the only section where css can go-->
         <style>
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
  /* background color */
           body{background-color: lightskyblue;
 /* hexidecimal */
             background-color: #e7fbfd;
 /* RGB */
-            background-color: rgb(49,120,189);
-          }
-          section{
-            background-color: #e7fbfd;
-/* opacity */
-            background-color: rgba(255, 255, 255, .10);
-          }
+            background-color: rgb(49,120,189);}
+
+          section{background-color: #e7fbfd;
+/* opacity is the a, last avlue is between 0 and 1*/
+/* all 255 is white, all 0 is black */
+            background-color: rgba(255, 255, 255, .10);}
+
 /* heading colors */
-          h1{color: lightcyan;}
+          h1{color: lightcyan; font-family: 'Montserrat', sans-serif; font-weight: thin;}
           h3{color: skyblue;}
 
 /* font family */
           h3{font-family: arial; color: white; text-decoration: underline;}
 
 /* font size and bullet styles */
+/* if list style or text decoration say "none" then bullet point/ underline is removed */
           ul li{font-size: 14px; list-style: circle}
 
+/* ID tags can only be used once and begin with the # sign*/
+          #centerName{text-align: center;}
+
+/* class tags can be used more than once and begin with a . */
+          .bolder{font-weight: bolder; font-size: 16px}
+
+
+
+
         </style>
+
   </head>
 
   <body>
     <!-- Made a comment -->
     <header>
-      <h1>Emma Finn</h1>
+      <h1 id="centerName">Emma Finn</h1>
     </header>
         <p><em>(240) 888-8495</em><br></br>emmafinn98@gmail.com<a href="http://www.linkedin.com/in/creativemmafinn/"><br></br>in/creativemmafinn</a><br></br><a href="http://www.creativemmafinn.com">creativemmafinn.com</a></p>
 
@@ -48,12 +61,14 @@
 
     <section>
       <h3>About Me </h3>
-        <p>I'm a very sarcastic person who laughs at her own jokes (sometimes even 20 minutes after telling them), a person who waves at a dog but not its owner when walking, and a person who will stay up until two in the morning because "there's always time for one more episode." I am obsessed with crime shows, documentaries, and almost all things related to serial killers or murder. Don't be scared - it's just because my other major is psychology and I am fascinated by the human mind. </p>
+<!-- span tags allow you to syle within a block of text -->
+        <p>I'm a very sarcastic person who laughs at her own jokes (sometimes even 20 minutes after telling them), a person who waves at a dog but not its owner when walking, and a person who will stay up until two in the morning because "there's always time for one more episode." I am obsessed with crime shows, documentaries, and almost all things related to serial killers or murder. <span class="bolder"> Don't be scared </span> - it's just because my other major is psychology and I am fascinated by the human mind. </p>
     </section>
 
     <section>
       <h3>Interests</h3>
-        <ul>
+<!-- add class tag -->
+        <ul class="bolder">
           <li>Photography</li>
           <li>Travel</li>
           <li>Football</li>
