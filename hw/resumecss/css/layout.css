@@ -1,0 +1,42 @@
+
+
+/* take the EXACT @import link from google fonts for the EXACT type we want */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100i,400&display=swap');
+
+ /* background color */
+          body{background-color: lightskyblue;
+/* hexidecimal */
+            background-color: #e7fbfd;
+/* RGB */
+            background-color: rgb(49,120,189);}
+
+          section{background-color: #e7fbfd;
+/* opacity is the a, last avlue is between 0 and 1*/
+/* all 255 is white, all 0 is black */
+            background-color: rgba(255, 255, 255, .10);}
+
+/* heading colors */
+          h1{color: lightcyan; font-family: 'Montserrat', sans-serif; font-weight: 100;}
+          h3{color: skyblue;}
+
+/* font family */
+          h3{font-family: arial; color: white; text-decoration: underline;}
+
+/* font size and bullet styles */
+/* if list style or text decoration say "none" then bullet point/ underline is removed */
+          ul li{font-size: 14px; list-style: circle}
+
+/* ID tags can only be used once and begin with the # sign*/
+          #centerName{text-align: center;}
+
+/* class tags can be used more than once and begin with a . */
+          .bolder{font-weight: bolder; font-size: 16px}
+
+/* adding color/ style to "A" tags and removing underline on the hyperlink */
+          a{color: orange; text-decoration: none;}
+
+/* changing the color of a link after someone has clicked it */
+          a:visited{color:yellow;}
+
+/* changing the background color and style of a link when your mouse is over it */
+          a:hover{background-color: purple; font-style: italic;}
