@@ -34,13 +34,13 @@
           #oohlala{border: 4mm ridge rgba(176, 224, 230, .6);}
           #CanesBy100{color: DarkOrange;}
           #Cane4Lyf{color: LimeGreen;}
-          #help{}
+          #HelloDarknessMyOldFriend{text-shadow: 1px 1px 2px pink;}
 /* ID Tag below does not work :( plz help */
           #FutureSoBright{filter: saturate(50%);}
 
 /* class tags can be used more than once and begin with a . */
           .bolder{font-weight: bolder; font-size: 16px}
-          .Italy{}
+          .PrayForMe{font-variant-caps: all-small-caps;}
 
 /* adding color/ style to "A" tags and removing underline on the hyperlink */
           a{color: orange; text-decoration: none;}
