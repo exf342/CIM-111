@@ -1,7 +1,7 @@
 
 
 /* take the EXACT @import link from google fonts for the EXACT type we want */
-@import url('https://fonts.googleapis.com/css?family=Montserrat:100i,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Caveat:400,700&display=swap');
 
  /* background color */
           body{background-color: lightskyblue;
@@ -16,8 +16,11 @@
             background-color: rgba(255, 255, 255, .10);}
 
 /* heading colors */
-          h1{color: lightcyan; font-family: 'Montserrat', sans-serif; font-weight: 100;}
+          h1{color: lightcyan; font-family: 'Caveat', cursive; font-weight: Bold700; font-size: 42px;}
           h3{color: skyblue;}
+          p{color: silver}
+          address{color: DeepSkyBlue}
+
 
 /* font family */
           h3{font-family: arial; color: white; text-decoration: underline;}
@@ -28,9 +31,16 @@
 
 /* ID tags can only be used once and begin with the # sign*/
           #centerName{text-align: center;}
+          #oohlala{border: 4mm ridge rgba(176, 224, 230, .6);}
+          #CanesBy100{color: DarkOrange;}
+          #Cane4Lyf{color: LimeGreen;}
+          #help{}
+/* ID Tag below does not work :( plz help */
+          #FutureSoBright{filter: saturate(50%);}
 
 /* class tags can be used more than once and begin with a . */
           .bolder{font-weight: bolder; font-size: 16px}
+          .Italy{}
 
 /* adding color/ style to "A" tags and removing underline on the hyperlink */
           a{color: orange; text-decoration: none;}
