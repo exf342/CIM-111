@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Grid Example</title>
+
+    <style media="screen">
+
+      header{
+          width: 960px; height: 100px;
+          background-color: LightBlue;
+          margin: 0 auto;
+          border-width: 10px 5px 10px 5px; border-color: black; border-style: solid;
+          padding-top: 20px; padding-bottom: 20px;
+
+      }
+
+      main{
+          width: 960px; height: auto;
+          background-color: SkyBlue;
+          margin: 0 auto;
+          border-width:5px; border-style: solid; border-color: Black;
+          padding-top: 20px; padding-bottom: 20px;
+          font-family: arial;
+
+      }
+
+      footer{
+          width: 960px; height: 100px;
+          background-color: CornflowerBlue;
+          margin: 0 auto;
+          border-width:5px; border-style: solid; border-color: Black;
+          padding-top: 20px; padding-bottom: 20px;
+      }
+
+/* adding id tags as grids*/
+      #grid1{
+/* make sure grid width is smaller than the overall "main" container */
+          width:900px; height: auto;
+          margin: 0 auto;
+/* this is how you actually make it into a grid */
+          display: grid;
+/* make sure to change the height based on how long the picture goes */
+          grid-template-rows: 300px;
+          grid-template-columns: 280px 300px 280px;
+          grid-column-gap: 20px;
+      }
+
+/* editing the picture to fit in its box */
+      #grid1 img{
+        width: 300px;
+      }
+
+
+      #grid2{
+          width: 900px;
+          height: auto;
+          margin: 0 auto;
+          display: grid;
+          grid-template-rows: 300px;
+          grid-template-columns: 280px 300px 280px;
+          grid-column-gap: 20px;
+      }
+
+      #grid2 section img {
+        width: 300px;}
+
+      #grid3{
+        width: 600px; height: auto;
+        margin: 20px auto;
+        display: grid;
+/* grids version of auto uses "frames" and sizes itself based on the content */
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 20px;
+      }
+
+      #grid3 img{
+        width: 300px;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <header>
+
+    </header>
+
+    <main>
+        <section id="grid1">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            <img src="https://live.staticflickr.com/5502/10431877003_527dffd48b.jpg" alt="cookie sheet">
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </section>
+
+        <section id="grid2">
+            <section>
+                <h1> Cookies</h1>
+                <ul>
+                  <li>cocolate chip</li>
+                  <li>m&m</li>
+                  <li>peanut butter</li>
+                </ul>
+            </section>
+
+            <section>
+              <img src="https://live.staticflickr.com/5502/10431877003_527dffd48b.jpg" alt="cookie sheet">
+              <p>Chocolate chip or nothing!</p>
+            </section>
+
+            <section>
+              <h1>About Cookies</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </section>
+
+        </section>
+
+        <section id="grid3">
+            <img src="https://live.staticflickr.com/5502/10431877003_527dffd48b.jpg" alt="cookie sheet">
+            <img src="https://live.staticflickr.com/5502/10431877003_527dffd48b.jpg" alt="cookie sheet">
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+  </body>
+
+
+</html>
