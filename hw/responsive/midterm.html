@@ -11,148 +11,80 @@
     <link rel="stylesheet" href="css/mobile.css" media="only screen and (max-width: 600px)">
 
     <style media="screen">
-        header{
-          background-color:LightBlue;
-          width:920px; height:auto;
-          padding: 20px 20px 20px 20px;
-          border-width: 10px 5px 10px 5px; border-color: black; border-style: solid;
-          margin:0 auto;
-          margin-top:-10px;}
-
-        main{
-          background-color: SkyBlue;
-          width:920px;
-          height:auto;
-  /* padding adds x pixels around each side of the text */
-          padding:20px;
-  /* can adjust each side's padding individually */
-          padding-top:20px;
-          padding-right:20px;
-          padding-bottom:20px;
-          padding-left:20px;
-  /* add border around box on all sides */
-          border-width:5px; border-style: solid; border-color: Black;
-  /* making the margins auto on the left/ right will center the box and have it move based on the size of the window */
-          margin-top:0px;
-          margin-right: auto;
-          margin-bottom:0px;
-          margin-left:auto;}
-
-        footer{
-            background-color:CornflowerBlue;
-            width:920px; height:auto;
-            margin-top:0px;
-            margin-right: auto;
-            margin-bottom:0px;
-            margin-left:auto;
-            padding:20px;
-            border-width:5px;
-            border-style: solid;
-            border-color: Black;
-             }
-
-        nav{
-           background-color: LightCyan;
-           border-width:5px;
-           border-style: solid;
-           border-color: black;
-           width: 360px;
-           height: auto;
-     /* this is how you center something */
-               margin: 0 auto;}
-
-        nav ul li{
-            list-style: none;
-            display: inline-block;
-            margin-right: 20px;
-            padding: 5px;}
-
-        nav ul li a{
-            color: navy;
-            text-decoration: none;
-            padding: 5px;}
-
-        nav ul li:hover{
-            background-color: LightSteelBlue;}
-
-        #grid1{
-            width: 800px; height: auto;
-            margin: 20px auto;
-            display: grid;
-            grid-template-rows: 150px;
-            grid-template-columns: 190px 590px;
-            grid-column-gap: 20px;
-            }
-
-        #grid2{
-            width: 800px; height: auto;
-            margin: 20px auto;
-            display: grid;
-            grid-auto-rows: 230px;
-            grid-template-columns: 390px 390px;
-            grid-column-gap: 20px;
-            }
-
-        #grid2 img{
-            width: 300px;
-            margin: 0 auto;
-            display: block;
-            }
-
-        #grid3{
-            width: 800px; height: auto;
-            margin: 20px auto;
-            display: grid;
-            grid-template-rows: 1fr;
-            grid-template-columns: 1fr 2fr;
-            grid-column-gap: 20px;
-            }
-
-        #grid3 img{
-            width: 350px;
-            margin: 0 auto;
-            display: block;
-            }
-
-
 
     </style>
   </head>
 
   <body>
     <header>
-        <h1>Header</h1>
+        <h2>The Places I've Lived</h2>
           <nav>
             <ul>
               <li>
-                <a href=""> Home </a>
+                <a href=""> Washington D.C. </a>
               </li>
               <li>
-                <a href=""> About Me </a>
+                <a href=""> London </a>
               </li>
               <li>
-                <a href=""> Contact Me </a>
+                <a href=""> Miami </a>
+              </li>
+              <li>
+                <a href=""> Amsterdam </a>
               </li>
             </ul>
           </nav>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p id="center">Check out pictures and recommendations from four of the six places I've lived. </p>
 
     </header>
 
     <main>
-        <section id="grid1">
-            <h1>Main</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <section class="border" id="bluedabadee">
+          <h1 class="padding">Washington D.C.</h1>
+
+          <section id="grid1">
+            <img src="images/mlk.jpeg" alt="Marting Luther King Jr. Memorial">
+              <section>
+                  <h4>Sights to See:</h4>
+                  <ul>
+                    <li> Washington Monument </li>
+                    <li> Lincoln Memorial </li>
+                    <li> Washington Monument </li>
+                    <li> Lincoln Memorial </li>
+                    <li> Washington Monument </li>
+                    <li> Lincoln Memorial </li>
+                    <li> Washington Monument </li>
+                    <li> Lincoln Memorial </li>
+                    <li> Washington Monument </li>
+                    <li> Lincoln Memorial </li>
+                  </ul>
+              </section>
+            <img src="images/maryland.jpeg" alt="image1">
         </section>
 
+
+      </section>
+      <section class="border">
+        <h1 class="padding">London</h1>
         <section id="grid2">
             <img src="https://farm8.staticflickr.com/7323/9983008054_b56908d3b5_b.jpg" alt="image1">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </section>
+      </section>
+      <section class="border">
+        <h1>Miami</h1>
         <section id="grid3">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <img src="https://live.staticflickr.com/2520/3880144586_89df065fc5_b.jpg" alt="image2">
         </section>
+      </section>
+      <section class="border">
+        <h1>Amsterdam</h1>
+        <section id="grid4">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <img src="https://live.staticflickr.com/2520/3880144586_89df065fc5_b.jpg" alt="image2">
+        </section>
+      </section>
 
 
 
