@@ -1,0 +1,144 @@
+header{
+  background-color:LightBlue;
+  width:920px; height:auto;
+  padding: 20px 20px 20px 20px;
+  border-width: 1px 1px 0px 1px; border-color: black; border-style: solid;
+  margin:0 auto;
+  margin-top: 5px;
+  text-align: justify;
+}
+
+main{
+  background-color: SkyBlue;
+  width:920px;
+  height:auto;
+  text-align: justify;
+/* padding adds x pixels around each side of the text */
+  padding:20px;
+/* can adjust each side's padding individually */
+  padding-top:20px;
+  padding-right:20px;
+  padding-bottom:20px;
+  padding-left:20px;
+/* add border around box on all sides */
+  border-width:1px; border-style: solid; border-color: Black;
+/* making the margins auto on the left/ right will center the box and have it move based on the size of the window */
+  margin-top:0px;
+  margin-right: auto;
+  margin-bottom:0px;
+  margin-left:auto;}
+
+footer{
+    background-color:LightBlue;
+    width:920px; height:auto;
+    margin-top:0px;
+    margin-right: auto;
+    margin-bottom:0px;
+    margin-left:auto;
+    padding:20px;
+    border-width:0px 1px 1px 1px;
+    border-style: solid;
+    border-color: Black;
+    text-align: justify;
+     }
+
+nav{
+   background-color: LightCyan;
+   border-width:1px;
+   border-style: solid;
+   border-color: black;
+   width: 520px;
+   height: auto;
+/* this is how you center something */
+       margin: 0 auto;}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+    padding: 5px;}
+
+nav ul li a{
+    color: navy;
+    text-decoration: none;
+    padding: 5px;}
+
+nav ul li:hover{
+    background-color: LightSteelBlue;}
+
+#grid1{
+    width: 800px; height: auto;
+    margin: 20px 20px 20px 20px;
+    display: grid;
+    grid-template-rows: 350px;
+    grid-template-columns: 290px 200px 290px;
+    grid-column-gap: 20px;
+    text-align: justify;
+    text-align: top;
+    }
+
+#grid1 img{
+  width: 290px;
+  margin: 0 auto;
+  display: block;
+  position:relative;
+  top: 20px;
+}
+
+#grid2{
+    width: 800px; height: auto;
+    margin: 20px auto;
+    display: grid;
+    grid-auto-rows: 230px;
+    grid-template-columns: 390px 390px;
+    grid-column-gap: 20px;
+    text-align: justify;
+    }
+
+#grid2 img{
+    width: 300px;
+    margin: 0 auto;
+    display: block;
+    }
+
+#grid3{
+    width: 800px; height: auto;
+    margin: 20px auto;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 20px;
+    text-align: justify;
+    }
+
+#grid3 img{
+    width: 350px;
+    margin: 0 auto;
+    display: block;
+    }
+
+#grid4{
+
+}
+
+#grid4 img{}
+
+#center{
+  text-align: center;
+}
+
+.border{
+    border-width: 3px;
+    height:auto;
+    border-style: solid;
+    border-color: black;
+    margin-bottom: 20px;
+}
+
+.padding{
+    padding: 0px 0px 0px 20px;
+}
+
+#bluedabadee{
+    background-color: LightCyan;
+}
