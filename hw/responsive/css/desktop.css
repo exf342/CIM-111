@@ -90,7 +90,7 @@ nav ul li:hover{
     width: 1300px; height: auto;
     margin: 0 auto;
     display: grid;
-    grid-auto-rows: 450px;
+    grid-template-rows: 450px;
     grid-template-columns: 280px 280px 20px;
     grid-column-gap: 20px;
     }
@@ -105,26 +105,42 @@ nav ul li:hover{
     }
 
 #grid3{
-    width: 800px; height: auto;
-    margin: 20px auto;
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 2fr;
-    grid-column-gap: 20px;
-    text-align: justify;
+  width: 800px; height: 270px;
+  margin: 20px 20px 20px 20px;
+  display: grid;
+  grid-template-rows: 300px;
+  grid-template-columns: 220px 290px 290px;
+  grid-column-gap: 30px;
+  text-align: justify;
+  text-align: top;
     }
 
 #grid3 img{
-    width: 350px;
+    width: 300px;
     margin: 0 auto;
     display: block;
+    position:relative;
+    top: 20px;
     }
 
 #grid4{
-
+  width: 800px; height: auto;
+  margin: 20px 20px 20px 20px;
+  display: grid;
+  grid-template-rows: 420px;
+  grid-template-columns: 220px 290px 300px;
+  grid-column-gap: 40px;
+  text-align: justify;
+  text-align: top;
 }
 
-#grid4 img{}
+#grid4 img{
+  width: 290px;
+  margin: 0 auto;
+  display: block;
+  position:relative;
+  top: 20px;
+}
 
 #center{
   text-align: center;
@@ -139,14 +155,25 @@ nav ul li:hover{
 }
 
 .padding{
-    padding: 0px 0px 0px 20px;
-}
+    padding: 0px 0px 0px 20px;}
 
 /* filling in grids to be blue */
 #bluedabadee{
-    background-color: LightCyan;
-}
-
+    background-color: LightCyan;}
 #DeepBlueSea{
-    background-color: LightCyan;
-}
+    background-color: LightCyan;}
+#BluesClues{
+    background-color: LightCyan;}
+#BlueEyesWannaDie{
+    background-color: LightCyan;}
+
+
+/* links to places on site */
+#linktotop{
+    color: navy;}
+
+/* how to i get this link to have the same features as my nav?????????? */
+#linktotop a:hover{
+    background-color: LightSteelBlue;}
+#linktotop a:visited{
+    color:navy;}
