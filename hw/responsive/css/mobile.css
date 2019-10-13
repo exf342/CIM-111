@@ -25,7 +25,7 @@ nav ul li{
 }
 
 /* stacks items by removing grids and can do it all at once */
-#grid1, #grid2, #grid3{
+#grid1, #grid2, #grid3, #grid4{
   display:block;
   width: 380px;
 }
