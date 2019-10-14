@@ -39,8 +39,12 @@ footer{
     border-width:0px 1px 1px 1px;
     border-style: solid;
     border-color: Black;
-    text-align: justify;
      }
+
+footer a{
+  text-decoration: none;
+  text-align: center;
+}
 
 nav{
    background-color: LightCyan;
@@ -87,19 +91,17 @@ nav ul li:hover{
 
 #grid2{
     width: 800px; height: auto;
-    margin: 0 auto;
+    margin: 0px auto;
     display: grid;
     grid-template-rows: 450px;
-    grid-template-columns: 280px 280px 20px;
+    grid-template-columns: 280px 280px 280px;
     grid-column-gap: 20px;
+    padding-right: 80px;
     }
 
 #grid2 p{
     width: 280px;
-    height: 380px;
-    margin: 0 auto;
-
-        }
+    }
 
 #grid2 img{
     width: 280px;
@@ -190,4 +192,5 @@ nav ul li:hover{
     width: 100px;
     height: auto;
     margin: 0 auto;
-    padding: 10px 0px 10px 17px;}
+    padding: 10px 0px 10px 17px;
+  }
