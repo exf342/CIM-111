@@ -169,7 +169,7 @@ nav ul li:hover{
 #linktotop{
     color: navy;}
 
-/* how to i get this link to have the same features as my nav?????????? */
+/* how to i get this link to have the hover and visited affects?????????? */
 #linktotop a:hover{
     background-color: yellow;}
 #linktotop a:visited{
