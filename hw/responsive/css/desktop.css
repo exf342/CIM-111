@@ -74,7 +74,6 @@ nav ul li:hover{
     grid-template-columns: 290px 250px 240px;
     grid-column-gap: 20px;
     text-align: justify;
-    text-align: top;
     }
 
 #grid1 img{
@@ -112,7 +111,6 @@ nav ul li:hover{
   grid-template-columns: 220px 290px 290px;
   grid-column-gap: 30px;
   text-align: justify;
-  text-align: top;
     }
 
 #grid3 img{
@@ -131,7 +129,6 @@ nav ul li:hover{
   grid-template-columns: 220px 290px 300px;
   grid-column-gap: 40px;
   text-align: justify;
-  text-align: top;
 }
 
 #grid4 img{
@@ -174,6 +171,6 @@ nav ul li:hover{
 
 /* how to i get this link to have the same features as my nav?????????? */
 #linktotop a:hover{
-    background-color: LightSteelBlue;}
+    background-color: yellow;}
 #linktotop a:visited{
     color:navy;}
