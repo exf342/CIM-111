@@ -16,12 +16,13 @@ footer{
 }
 
 nav{
-  width: 250px;
+  width: 250px
 }
 
 nav ul li{
   display: block;
   text-align: center;
+  margin-right: 35px;
 }
 
 /* stacks items by removing grids and can do it all at once */
@@ -31,13 +32,31 @@ nav ul li{
   height: auto;
 }
 
-#grid3 img{
-  width: 300px;
+#grid1 img{
+  padding: 0px 40px 20px 0px;
 }
 
+#grid1 section{
+  padding: 0px 0px 0px 27px;
+}
 
+#grid2 p{
+  padding: 0px 0px 20px 50px;
+}
 
+#grid3 img{
+  width: 300px;
+  padding: 0px 45px 20px 0px;
+}
 
-/* need to center photos and have align with text ?????????????????*/
-/* need to add gap between pictures ?????????????????????????????? */
-/* add gap between bottom picture and end of the box?????????????? */
+#grid3 section{
+  padding: 0px 0px 0px 30px;
+}
+
+#grid4 img{
+  padding: 0px 40px 20px 0px;
+}
+
+#grid4 section{
+  padding: 0px 0px 0px 27px;
+}
