@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:700|PT+Sans&display=swap');
+
 header{
   background-color:LightBlue;
   width:920px; height:auto;
@@ -7,6 +9,26 @@ header{
   margin-top: 5px;
   text-align: justify;
 }
+
+header p{
+  font-family: PT Sans, sans-serif;
+  font-size: 15px;
+}
+
+h1{
+  font-family: Oswald, sans-serif;
+  font-size: 30px;
+}
+
+h2{
+  font-family: Oswald, sans-serif;
+  font-size: 25px;
+}
+
+h4{
+  font-family: PT Sans, sans-serif;
+}
+
 
 main{
   background-color: SkyBlue;
@@ -44,6 +66,13 @@ footer{
 footer a{
   text-decoration: none;
   text-align: center;
+  font-family: PT Sans, sans-serif;
+  font-size: 16px;
+}
+
+footer p{
+  font-family: PT Sans, sans-serif;
+  font-size: 14px;
 }
 
 nav{
@@ -65,7 +94,9 @@ nav ul li{
 nav ul li a{
     color: navy;
     text-decoration: none;
-    padding: 5px;}
+    padding: 5px;
+    font-family: PT Sans, sans-serif;
+  }
 
 nav ul li:hover{
     background-color: LightSteelBlue;}
@@ -89,6 +120,11 @@ nav ul li:hover{
   top: 20px;
 }
 
+#grid1 ul li{
+  font-family: PT Sans, sans-serif;
+  font-size: 13px;
+}
+
 #grid2{
     width: 800px; height: auto;
     margin: 0px auto;
@@ -101,7 +137,9 @@ nav ul li:hover{
 
 #grid2 p{
     width: 280px;
-    }
+    font-family: PT Sans, sans-serif;
+    font-size: 12px;
+  }
 
 #grid2 img{
     width: 280px;
@@ -129,6 +167,11 @@ nav ul li:hover{
     top: 20px;
     }
 
+#grid3 ul li{
+    font-family: PT Sans, sans-serif;
+    font-size: 13px;
+  }
+
 #grid4{
   width: 800px; height: auto;
   margin: 20px 20px 20px 20px;
@@ -145,6 +188,11 @@ nav ul li:hover{
   display: block;
   position:relative;
   top: 20px;
+}
+
+#grid4 ul li{
+  font-family: PT Sans, sans-serif;
+  font-size: 13px;
 }
 
 #center{
