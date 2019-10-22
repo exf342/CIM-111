@@ -6,13 +6,17 @@
   </head>
 
   <body>
+      <h1>Make me Purple</h1>
+      <h1>Purple Durple</h1>
 
+      <h2 id="underline">underline me</h2>
+        <ul>
+          <li class="blue"> Item 1 </li>
+          <li class="blue"> Item 2 </li>
+          <li class="blue"> Item 3 </li>
+        </ul>
 
-
-
-
-
-
+        <p id="changetext"> paragraph changes are magical</p>
 
 
 
@@ -22,7 +26,24 @@
 <!-- absolute link to remote version -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <!-- relative link to downloaded version -->
-      <script src="js/jquery.js"></script>
+      <script type="text/javascript" src="js/jquery.js"></script>
+
+
+      <script type="text/javascript">
+//must always start with document; every search starts $
+        $(document).ready(function(){
+//all of your javascript/jquery code goes below
+      //.css function .css ("css property"), "value")
+            $("h1").css("color", "RebeccaPurple");
+      // how to use an id tag
+            $("#underline").css("text-decoration", "underline")
+      // how to use a class tag
+            $(".blue").css("background-color", "thistle");
+      // .html changes the text inside of the html element
+            $("#changetext").html("magic trick");
+
+        });
+      </script>
   </body>
 
 
