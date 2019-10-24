@@ -3,11 +3,24 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+
+<style media="screen">
+  img{width:300px};
+</style>
+
   </head>
 
   <body>
     <h1 id="changebackground"> click here to change background color</h1>
+    <h1 id="changepurple"> lmao jk change color to dark purple</h1>
 
+    <ul>
+      <li id="item1" class="item"> always numba 1</li>
+      <li id="item2" class="item"> takes 2 to tango</li>
+      <li id="item3" class="item"> 3rd times the charm</li>
+    </ul>
+
+    <p id="changetext"></p>
 
 
 
@@ -20,12 +33,34 @@
 //must always start with document; every search starts $
       $(document).ready(function(){
 //all of your javascript/jquery code goes below
-          $()
+          $("#changebackground").click(function(){
+              $("body").css("background-color", "Thistle")
+            }); //end of change background click
 
+          $("#changepurple").click(function(){
+              $("body").css("background-color", "RebeccaPurple");
+              }); // end of change purple click
 
+          $("#item1").mouseenter(function(){
+              $("#changetext").html("bitch da fuck u doin");
+              }); //end of item1 mouseenter
 
+          $("#item2").mouseenter(function(){
+              $("#changetext").html("<strong> fukin coding dumbass</strong>");
+          }); //end of item2 mouseenter
 
+          $("#item3").mouseenter(function(){
+              $("#changetext").html("<img src='https://farm4.staticflickr.com/3903/14556025533_f7819b15d0_b.jpg' alt='grumpy ass cat'>");
+          }); //end of item3 mouseenter
 
+          $("#item1").mouseleave(function(){
+              $("#changetext").html(""); // html with double quotes blanks out the rest of it
+          }); //end of item1 mouseleave
+
+//using a class
+          $(".item").mouseleave(function(){
+              $("changetext").html(""); //means that when you move the mouse away, text disappears
+          }); //end of class mouseleave
 
       }); //end of document ready
   </script>
