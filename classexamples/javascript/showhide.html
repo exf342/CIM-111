@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>bitch</title>
 
     <style media="screen">
       .grid{
@@ -16,13 +16,19 @@
   <body>
     <h1 id="section1show">Show & Tell</h1>
     <h1 id="section1hide">Hide & Go Seek</h1>
+    <h1 id="section1toggle">Toggle dis $hit</h1>
 
-        <section class="grid">
+        <section class="grid" id="section1">
           <h2>Section 1</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </section>
 
+    <h1 id="section2mouse">Tom the cat and Jerry the mouse (over)</h1>
 
+    <section class="grid" id="section2">
+      <h2>Section 2</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </section>
 
     <!-- absolute link to remote version -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -33,8 +39,30 @@
     //must always start with document; every search starts $
           $(document).ready(function(){
     //all of your javascript/jquery code goes below
+            $("#section1").hide();
+            $(".grid").hide();
 
+            $("#section1show").click(function(){
+              $("#section1").show();
+              });
 
+            $("#section1hide").click(function(){
+              $("#section1").hide();
+              });
+
+            $("#section2mouse").mouseenter(function(){
+              $("#section2").show();
+            });
+
+            $("#section2mouse").mouseleave(function(){
+              $("#section2").hide();
+            });
+
+// putting a number in parentheses for show, hide, and toggle animates it
+            $("#section1toggle").click(function(){
+          //  $("#section1").toggle(1000); //goes from top left to bottom right
+              $("#section1").slideToggle(1000); //goes from top to bottom
+            });
 
     });
    </script>
