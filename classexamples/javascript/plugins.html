@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Fuck I'm Tired</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+
+    <style media="screen">
+       img{
+         width: 200px;
+       }
+
+       .char1{
+         background-color: red;
+       }
+       .char2{
+         background-color: orange;
+       }
+       .char3{
+         background-color: yellow;
+       }
+       .char4{
+         background-color: LimeGreen;
+       }
+       .char5{
+         background-color: ForestGreen;
+       }
+       .char6{
+         background-color: LightBlue;
+       }
+       .char7{
+         background-color: Indigo;
+       }
+       .char8{
+         background-color: DarkBlue;
+       }
+       .char9{
+         background-color: Lavender;
+       }
+       .char10{
+         background-color: Purple;
+       }
+       .char11{
+         background-color: LightPink;
+       }
+       .char12{
+         background-color: Magenta;
+       }
+       .char13{
+         background-color: RosyBrown;
+       }
+       .char14{
+         background-color: SaddleBrown;
+       }
+       .char15{
+         background-color: Maroon;
+       }
+       .char16{
+         background-color: Sienna;
+       }
+       .char17{
+         background-color: Gray;
+       }
+
+       .word1{
+         background-color: Aqua;
+       }
+       .word2{
+         background-color: Gold;
+       }
+       .word3{
+         background-color: DodgerBlue;
+       }
+       .word4{
+         background-color: BlueViolet;
+       }
+
+       .line1{
+         background-color: PaleTurquoise;
+       }
+
+       .line2{
+         background-color: DarkRed;
+       }
+    </style>
+  </head>
+
+  <body>
+      <h1 class="fancy_title">I'm Fucking Tired</h1>
+      <h1 id="words">What's The Word Yo?</h1>
+      <h1 id="lines"> We were on <br> a break!</h1>
+
+
+
+
+
+    <a data-fancybox="gallery" href="https://live.staticflickr.com/4140/4805435244_4c781d48ae_b.jpg"><img src="https://live.staticflickr.com/4140/4805435244_4c781d48ae_b.jpg"></a>
+    <a data-fancybox="gallery" href="https://live.staticflickr.com/69/183888672_ff6f82916d.jpg"><img src="https://live.staticflickr.com/69/183888672_ff6f82916d.jpg"></a>
+
+
+    <!-- Step 1: add jquery script -->
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <!-- Step 2: add fancybox jquery plugin script -->
+      <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+    <!-- Step 2: add lettering jquery plugin script -->
+      <script type="text/javascript" <source src="js/jquery.lettering-0.6.1.min.js"> </script>
+
+      <script>
+        $(document).ready(function() {
+            $(".fancy_title").lettering();
+            $("#words").lettering("words");
+            $("#lines").lettering("lines");
+          });
+      </script>
+  </body>
+</html>
