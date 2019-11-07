@@ -1,75 +1,123 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Baking for the Incompetent</title>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Baking for the Incompetent</title>
+    <link rel="stylesheet" href="css/baking.css" />
 
-    <style media="screen">
-      .grid{
-        display: grid;
-        grid-auto-rows: 1fr;
-        grid-template-columns: 1fr 2fr;
-      }
-    </style>
-  </head>
+		<style media="screen">
+			#section1{
+				width: 300px;
+				left: 100px;
+				border-style: : solid;
+				border-color: navy;
+				border-width: 2px;
+			}
 
-  <body>
-    <header>
-      <h1>How to Bake Cupcakes</h1>
-    </header>
-    <main>
-      <section>
-        <h2>Let's Get 1 Thing Straight</h2>
-        <p>If you're here, its because you don't know how to bake for shit and you want to learn. I'm going to start off simple, because if you can't even get this, then boy are you in trouble. Maybe you want to be a cool parent who bakes for their kid's school. You could be someone who wants to be a good friend or coworker and wants to bake for a someone's birthday. Who knows, you might be like me- a fatass college student who enjoys baked goods but is either too lazy or cheap to make it from scratch. Whoever you are, you are in the right place.</p>
-      </section>
+			p{
+				text-align: justify;
+			}
 
-      <section>
-        <img src="" alt="box mix for cupcakes">
-        <h3>Ingredients:</h3>
-        <ul>
-          <li>1 box of cupcake mix (choose your favorite brand)</li>
-          <li>x eggs</li>
-          <li>x water</li>
-          <li>x oil</li>
-          <li>x chocolate chips (optional)</li>
-          <li>tub of frosting (I will be using Duncan Hines' Cream Cheese Icing)</li>
-          <li>12 muffin/cupcake liners</li>
-        </ul>
-      </section>
+			#section2{
+				width: 300px;
+				left: 900px;
+				border-style: : solid;
+				border-color: navy;
+				border-width: 2px;
+			}
 
-      <section>
-        <img src="" alt="all ingredients on counter">
-        <h3>Step 1: Setting up</h3>
-        <ol>
-          <li>Preheat the oven to x degrees (always do this first so while you mix everything the oven can warm up)</li>
-          <li>Grab your cupcake pan and place one liner in each spot</li>
-          <li>Collect all of your ingredients, measuring cups, and bowls and place them in one srea on the counter</li>
-        </ol>
-      </section>
+			#section3{
+				width: 300px;
+				left: 1600px;
+				border-style: : solid;
+				border-color: navy;
+				border-width: 2px;
+			}
 
-      <section>
+			#section4{
+				width: 300px;
+				left: 2300px;
+				border-style: : solid;
+				border-color: navy;
+				border-width: 2px;
+			}
 
-      </section>
+			#section5{
+				width: 300px;
+				left: 3000px;
+				border-style: : solid;
+				border-color: navy;
+				border-width: 2px;
+			}
+
+			#section6{
+				width: 300px;
+				left: 3700px;
+				border-style: : solid;
+				border-color: navy;
+				border-width: 2px;
+			}
+		</style>
+</head>
+<body>
+	<header>
+
+	</header>
+	<main>
+    <div class="horizon scroll">
+				<img src="images/lighterback.jpg" alt="" />
+    </div>
+    <div class="middle scroll">
+				<img src="images/darkerback.png" alt="" />
+
+    </div>
+    <div class="front scroll">
+        <img src="images/front.png" alt="" >
 
 
+				<section id="section1" class="page">
+	        <h2>Let's Get One Thing Straight</h2>
+	        <p>If you're here, its because you don't know how to bake for shit and you want to learn. I'm going to start off simple, because if you can't even get this, then boy are you in trouble. Whoever you are, you are in the right place.</p>
+	      </section>
 
-    </main>
+				<section id="section2" class="page">
+	        <h3>Step 1: Gather Ingredients</h3>
+	        <ul>
+							<li>1 box of cupcake mix (choose your favorite brand)</li>
+							<li>x eggs</li>
+							<li>x water</li>
+							<li>x oil</li>
+							<li>x chocolate chips (optional)</li>
+							<li>tub of frosting (I will be using Duncan Hines' Cream Cheese Icing)</li>
+							<li>12 muffin/cupcake liners</li>
+					</ul>
+	      </section>
+				<section id="section3" class="page">
+	        <h3>Step 2: Setting Up</h3>
+	        <ol>
+							<li>Preheat the oven to x degrees (always do this first so while you mix everything the oven can warm up)</li>
+							<li>Grab your cupcake pan and place one liner in each spot</li>
+							<li>Collect all of your ingredients, measuring cups, and bowls and place them in one area on the counter</li>
+					</ol>
+	      </section>
 
 
-<!-- absolute link to remote version -->
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<!-- relative link to downloaded version -->
-          <script type="text/javascript" src="js/jquery.js"></script>
-
-          <script type="text/javascript">
-        //must always start with document; every search starts $
-            $(document).ready(function(){
-        //all of your javascript/jquery code goes below
+    </div>
+	</main>
 
 
-
-            });
-          </script>
-
-        </body>
-      </html>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.jInvertScroll.js"></script>
+    <script type="text/javascript">
+    (function($) {
+        $.jInvertScroll(['.scroll'],        // an array containing the selector(s) for the elements you want to animate
+            {
+            height: 6000,                   // optional: define the height the user can scroll, otherwise the overall length will be taken as scrollable height
+            onScroll: function(percent) {   //optional: callback function that will be called when the user scrolls down, useful for animating other things on the page
+                console.log(percent);
+            }
+        });
+    }(jQuery));
+    </script>
+</body>
+</html>
