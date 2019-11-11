@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="css/baking.css" />
 
 		<style media="screen">
-			#section1{
+			#section0{
 				width: 330px;
-				left: 400px;
+				left: 350px;
 				border-style: : solid;
 				border-color: navy;
 				border-width: 2px;
@@ -18,44 +18,106 @@
 				text-align: justify;
 			}
 
-			#section2{
+			#section1{
 				width: 300px;
 				left: 1200px;
+				border-style: solid;
+				border-color: navy;
+				border-width: 2px;
+			}
+
+			#img1{
+				width: 250px;
+				left: 1605px;
+				border-style: solid;
+				border-color: navy;
+				border-width: 1px;
+				padding: 0px;
+			}
+
+			#section2{
+				width: 300px;
+				left: 1900px;
 				border-style: : solid;
 				border-color: navy;
 				border-width: 2px;
+			}
+
+			#img2{
+				width: 250px;
+				left: 2305px;
+				border-style: solid;
+				border-color: navy;
+				border-width: 1px;
+				padding: 0px;
 			}
 
 			#section3{
 				width: 300px;
-				left: 1600px;
+				left: 2600px;
 				border-style: : solid;
 				border-color: navy;
 				border-width: 2px;
+			}
+
+			#img3{
+				width: 250px;
+				left: 3005px;
+				border-style: solid;
+				border-color: navy;
+				border-width: 1px;
+				padding: 0px;
 			}
 
 			#section4{
 				width: 300px;
-				left: 2300px;
+				left: 3300px;
 				border-style: : solid;
 				border-color: navy;
 				border-width: 2px;
+			}
+
+			#img4{
+				width: 250px;
+				left: 3705px;
+				border-style: solid;
+				border-color: navy;
+				border-width: 1px;
+				padding: 0px;
 			}
 
 			#section5{
 				width: 300px;
-				left: 3000px;
+				left: 4000px;
 				border-style: : solid;
 				border-color: navy;
 				border-width: 2px;
 			}
 
+			#img5{
+				width: 250px;
+				left: 4405px;
+				border-style: solid;
+				border-color: navy;
+				border-width: 1px;
+				padding: 0px;
+			}
+
 			#section6{
 				width: 300px;
-				left: 3700px;
+				left: 4700px;
 				border-style: : solid;
 				border-color: navy;
 				border-width: 2px;
+			}
+
+			#img6{
+				width: 250px;
+				left: 5105px;
+				border-style: solid;
+				border-color: navy;
+				border-width: 1px;
+				padding: 0px;
 			}
 		</style>
 </head>
@@ -75,32 +137,61 @@
         <img src="images/front.png" alt="" >
 
 
-				<section id="section1" class="page">
+				<section id="section0" class="page">
 	        <h2>Let's Get One Thing Straight</h2>
 	        <p>If you're here, its because you don't know how to bake for shit and you want to learn. I'm going to start off simple, because if you can't even get this, then you're a lost cause. Whoever you are, you are in the right place.</p>
 	      </section>
 
-				<section id="section2" class="page">
+				<section id="section1" class="page">
 	        <h3>Step 1: Gather Ingredients</h3>
 	        <ul>
 							<li>1 box of cupcake mix (choose your favorite brand)</li>
-							<li>x eggs</li>
-							<li>x water</li>
-							<li>x oil</li>
-							<li>x chocolate chips (optional)</li>
-							<li>tub of frosting (I will be using Duncan Hines' Cream Cheese Icing)</li>
-							<li>12 muffin/cupcake liners</li>
+							<li>3 eggs</li>
+							<li>1 cup water</li>
+							<li>1/2 cup vegetable/ canola oil</li>
+							<li>1/2 cup chocolate chips (optional)</li>
+							<li>1 tub of frosting </li>
+							<li>24 cupcake liners</li>
 					</ul>
 	      </section>
-				<section id="section3" class="page">
+
+				<img src="images/ingredients.jpeg" alt="ingredients" id="img1" class="page">
+
+				<section id="section2" class="page">
 	        <h3>Step 2: Setting Up</h3>
 	        <ol>
-							<li>Preheat the oven to x degrees (always do this first so while you mix everything the oven can warm up)</li>
+							<li>Preheat the oven to 375 degrees (always do this first so while you mix everything the oven can warm up)</li>
 							<li>Grab your cupcake pan and place one liner in each spot</li>
 							<li>Collect all of your ingredients, measuring cups, and bowls and place them in one area on the counter</li>
 					</ol>
 	      </section>
 
+				<img src="images/oven.jpeg" alt="preheat" id="img2" class="page">
+
+				<section id="section3" class="page">
+					<h3> Step 3: Mix Ingredients</h3>
+				</section>
+
+				<img src="images/wetdry.jpeg" alt="mixing" id="img3" class="page">
+
+				<section id="section4" class="page">
+					<h3> Step 4: Pour Batter</h3>
+				</section>
+
+				<img src="images/batter.jpeg" alt="batter" id="img4" class="page">
+
+				<section id="section5" class="page">
+					<h3> Step 5: Bake Cupcakes</h3>
+				</section>
+
+				<img src="images/cooling.jpeg" alt="cooling" id="img5" class="page">
+
+				<section id="section6" class="page">
+					<h3> Step 6: Frost and Enjoy</h3>
+					<p id="img6show">Click to reveal the final product</p>
+				</section>
+
+				<img src="images/oven.jpeg" alt="preheat" id="img6" class="page">
 
     </div>
 	</main>
@@ -109,15 +200,25 @@
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.jInvertScroll.js"></script>
     <script type="text/javascript">
-    (function($) {
+		  $(document).ready(function(){
+
+				$("#img6").hide();
+				$("#img6show").click(function(){
+						$("#img6").show();
+							});
+
+
+// DO NOT UNDER ANY CIRCUMSTANCES CHANGE ANYTHING BELOW THIS COMMENT
+		(function($) {
         $.jInvertScroll(['.scroll'],        // an array containing the selector(s) for the elements you want to animate
             {
             height: 6000,                   // optional: define the height the user can scroll, otherwise the overall length will be taken as scrollable height
             onScroll: function(percent) {   //optional: callback function that will be called when the user scrolls down, useful for animating other things on the page
                 console.log(percent);
             }
-        });
-    }(jQuery));
+						});
+			}(jQuery));
+			});
     </script>
-</body>
+	</body>
 </html>
