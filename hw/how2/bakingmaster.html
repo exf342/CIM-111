@@ -6,137 +6,13 @@
     <link rel="stylesheet" href="css/baking.css" />
 
 		<style media="screen">
-			#section0{
-				width: 330px;
-				left: 350px;
-				border-style: : solid;
-				border-color: navy;
-				border-width: 2px;
-			}
-
-			p{
-				text-align: justify;
-			}
-
-			#section1{
-				width: 300px;
-				left: 1200px;
-				border-style: solid;
-				border-color: navy;
-				border-width: 2px;
-			}
-
-			#img1{
-				width: 250px;
-				left: 1605px;
-				border-style: solid;
-				border-color: navy;
-				border-width: 1px;
-				padding: 0px;
-			}
-
-			#section2{
-				width: 300px;
-				left: 1900px;
-				border-style: : solid;
-				border-color: navy;
-				border-width: 2px;
-			}
-
-			#img2{
-				width: 250px;
-				left: 2305px;
-				border-style: solid;
-				border-color: navy;
-				border-width: 1px;
-				padding: 0px;
-			}
-
-			#section3{
-				width: 300px;
-				left: 2600px;
-				border-style: : solid;
-				border-color: navy;
-				border-width: 2px;
-			}
-
-			#img3{
-				width: 250px;
-				left: 3005px;
-				border-style: solid;
-				border-color: navy;
-				border-width: 1px;
-				padding: 0px;
-			}
-
-			#section4{
-				width: 300px;
-				left: 3300px;
-				border-style: : solid;
-				border-color: navy;
-				border-width: 2px;
-			}
-
-			#img4{
-				width: 250px;
-				left: 3705px;
-				border-style: solid;
-				border-color: navy;
-				border-width: 1px;
-				padding: 0px;
-			}
-
-			#section5{
-				width: 300px;
-				left: 4000px;
-				border-style: : solid;
-				border-color: navy;
-				border-width: 2px;
-			}
-
-			#img5{
-				width: 250px;
-				left: 4405px;
-				border-style: solid;
-				border-color: navy;
-				border-width: 1px;
-				padding: 0px;
-			}
-
-			#section6{
-				width: 300px;
-				left: 4700px;
-				border-style: : solid;
-				border-color: navy;
-				border-width: 2px;
-			}
-
-			#img6{
-				width: 350px;
-				left: 5105px;
-				border-style: solid;
-				border-color: navy;
-				border-width: 1px;
-				padding: 0px;
-			}
-
-			#section7{
-				width: 300px;
-				left: 5500px;
-				border-style: : solid;
-				border-color: navy;
-				border-width: 2px;
-			}
-
-			#img7{
-				width: 300px;
-			}
-
 		</style>
+
 </head>
 <body>
+
 	<header>
-		<h1>How to Bake Cupcakes</h1>
+
 	</header>
 	<main>
     <div class="horizon scroll">
@@ -231,22 +107,24 @@
     <script type="text/javascript">
 		  $(document).ready(function(){
 
+
 				$("#img6").hide();
 				$("#img6show").click(function(){
-						$("#img6").show();
+						$("#img6").slideToggle(1000);
 							});
 
 				$("#changetext").mouseenter(function(){
-					$("#changetext").html("Potential Design: Delicious!");
+					$("#changetext").html('Potential Design: <span id="changecolor">Delicious!</span>');
+					$("#changecolor").css("color", "cornflowerblue");
+
 				}); //end of mouseenter
 
 				$("#changetext").mouseleave(function(){
-						$("#changetext").html("Potential Design: So cute!");
-				}); //end of mouseleave
 
-				$("#changecolor").mouseover(function(){
-					$("body").css("color", "cornflowerblue");
-				});
+						$("#changetext").html('Potential Design: So cute!');
+
+
+				}); //end of mouseleave
 
 
 // DO NOT UNDER ANY CIRCUMSTANCES CHANGE ANYTHING BELOW THIS COMMENT
