@@ -119,6 +119,19 @@
 				border-width: 1px;
 				padding: 0px;
 			}
+
+			#section7{
+				width: 300px;
+				left: 5500px;
+				border-style: : solid;
+				border-color: navy;
+				border-width: 2px;
+			}
+
+			#img7{
+				width: 300px;
+			}
+
 		</style>
 </head>
 <body>
@@ -204,6 +217,11 @@
 
 				<img src="images/frosted.jpeg" alt="frosted" id="img6" class="page">
 
+				<section id="section7" class="page">
+					<h3 id="h3section7">Potential Design: So cute!</h3>
+					<img src="images/animal.jpeg" alt="design" id="img7">
+				</section>
+
     </div>
 	</main>
 
@@ -217,6 +235,14 @@
 				$("#img6show").click(function(){
 						$("#img6").show();
 							});
+
+				$("#h3section7").click(function(){
+					$("#changetext").html("Potential design: Delicious!");
+				}); //end of mouseenter
+
+				$("#h3section7").click(function(){
+          $("body").css("text-color", "RebeccaPurple");
+          }); // end of change purple click
 
 
 // DO NOT UNDER ANY CIRCUMSTANCES CHANGE ANYTHING BELOW THIS COMMENT
