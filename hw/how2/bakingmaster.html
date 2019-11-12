@@ -218,7 +218,7 @@
 				<img src="images/frosted.jpeg" alt="frosted" id="img6" class="page">
 
 				<section id="section7" class="page">
-					<h3 id="h3section7">Potential Design: So cute!</h3>
+					<h3 id="changetext">Potential Design: <span id="changecolor"> So cute! </span></h3>
 					<img src="images/animal.jpeg" alt="design" id="img7">
 				</section>
 
@@ -236,13 +236,17 @@
 						$("#img6").show();
 							});
 
-				$("#h3section7").click(function(){
-					$("#changetext").html("Potential design: Delicious!");
+				$("#changetext").mouseenter(function(){
+					$("#changetext").html("Potential Design: Delicious!");
 				}); //end of mouseenter
 
-				$("#h3section7").click(function(){
-          $("body").css("text-color", "RebeccaPurple");
-          }); // end of change purple click
+				$("#changetext").mouseleave(function(){
+						$("#changetext").html("Potential Design: So cute!");
+				}); //end of mouseleave
+
+				$("#changecolor").mouseover(function(){
+					$("body").css("color", "cornflowerblue");
+				});
 
 
 // DO NOT UNDER ANY CIRCUMSTANCES CHANGE ANYTHING BELOW THIS COMMENT
