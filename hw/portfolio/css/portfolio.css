@@ -1,0 +1,10 @@
+
+header{
+  background-color:LightBlue;
+  width:920px; height:auto;
+  padding: 20px 20px 20px 20px;
+  border-width: 1px 1px 0px 1px; border-color: black; border-style: solid;
+  margin:0 auto;
+  margin-top: 5px;
+  text-align: justify;
+}
