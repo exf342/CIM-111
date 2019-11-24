@@ -8,6 +8,7 @@ header{
   text-align: justify;
 }
 
+/* how can i make everything scale as i shrink my window??? */
 nav ul li{
     list-style: none;
     display: inline-block;
@@ -17,7 +18,6 @@ nav ul li{
     font-size: 12px;
     border-width: 1px 0px 0px 0px; border-color: black; border-style: solid;
     width: 185px;
-
   }
 
 nav ul li a{
@@ -26,11 +26,7 @@ nav ul li a{
 }
 
 nav ul li:hover{
-  border-width: 2px 0px 0px 0px;
-}
-
-.currentpage{
-  border-width: 2px 0px 0px 0px;
+  border-width: 4px 0px 0px 0px;
 }
 
 h1{
@@ -42,32 +38,98 @@ main{
   background-color: #3D9BE9;
 }
 
-h2{
-  font-family: 'Comfortaa', cursive;
+#footer{
+  border-width: 1px 0px 0px 0px; border-color: black; border-style: solid;
+  padding: 10px 0px 30px 0px;
 }
 
+footer img {
+  width: 40px;
+  height: 40px;
+  padding: 20px 0px 10px 0px;
+}
 
+/* how do i resize an image without making it super pixelated??? */
 #img1{
   padding: 20px 10px 20px 25px;
   width: 96%;
   align-items: center;
+}
+/* how do i get it to scale from both sides not just left */
 
+#grid1 ul li{
+  list-style: none;
+  display: inline-block;
+  text-decoration: none;
+  margin-right: 20px;
+  padding: 5px;
+  font-family: 'Comfortaa', cursive;
+  border-width: 1px 0px 0px 0px; border-color: black; border-style: solid;
+  width: 350px;
+  width: 30%;
+}
+/* How do i move these over to be in line with the boxes??? */
+
+#grid2{
+  display: grid;
+  padding: 0px 0px 30px 60px;
+  grid-template-rows: 220px;
+  grid-template-columns: 360px 360px 360px;
+  grid-column-gap: 25px;
+}
+
+/* how do i get these to scale??? */
+#aboutquote{
+  background-color: black;
+  color: white;
+  padding: 10px 20px 10px 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+}
+
+#contactquote{
+  background-color: black;
+  color: white;
+  padding: 0px 10px 10px 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+}
+
+.currentpage{
+  border-width: 4px 0px 0px 0px;
 }
 
 .buttons{
-  width: 120px;
+  width: 60px;
   height: 20px;
+  padding: 5px;
   background-color: white;
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+  position: absolute;
+  /* how to i get the buttons to be in the bottom right of the box???? */
 }
 
 .buttons:hover{
-
-  background-color: gray;
+  background-color: silver;
 }
 
-.imageBox{
-  width: 300px;
-  height: 100px;
-  background-image: url("../images/myphoto.jpg");
-  background-color: white;
+.smaller{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+}
+
+/* how to get image to be the correct size??? */
+#imageBox{
+  display: grid;
+  width: 360px;
+  height: 220px;
+}
+
+#imagebox img{
+  display: grid;
+  width: 160px; height: 140px;
+  object-fit: cover;
 }
