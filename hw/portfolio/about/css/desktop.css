@@ -17,7 +17,6 @@ nav ul li{
     font-size: 12px;
     border-width: 1px 0px 0px 0px; border-color: black; border-style: solid;
     width: 185px;
-
   }
 
 nav ul li a{
@@ -27,6 +26,17 @@ nav ul li a{
 
 nav ul li:hover{
   border-width: 2px 0px 0px 0px;
+}
+
+#footer{
+  border-width: 1px 0px 0px 0px; border-color: black; border-style: solid;
+  padding: 10px 0px 30px 0px;
+}
+
+footer img {
+  width: 40px;
+  height: 40px;
+  padding: 10px 0px 0px 0px;
 }
 
 .currentpage{
