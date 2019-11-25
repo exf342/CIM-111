@@ -17,7 +17,6 @@ nav ul li{
     font-size: 12px;
     border-width: 1px 0px 0px 0px; border-color: black; border-style: solid;
     width: 185px;
-
   }
 
 nav ul li a{
@@ -27,6 +26,16 @@ nav ul li a{
 
 nav ul li:hover{
   border-width: 4px 0px 0px 0px;
+}
+
+#heading{
+  border-width: 1px 0px 4px 0px;
+  border-top-color: black; border-style: solid;
+  border-bottom-color: #3D9BE9; border-style: solid;
+  padding: 10px 0px 10px 0px;
+  font-family: 'Comfortaa', cursive;
+  font-size: 26px;
+  margin: 0px 50px 0px 50px;
 }
 
 #footer{
