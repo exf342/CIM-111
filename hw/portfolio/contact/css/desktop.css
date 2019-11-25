@@ -29,6 +29,66 @@ nav ul li:hover{
   border-width: 4px 0px 0px 0px;
 }
 
+#heading{
+  border-width: 1px 0px 4px 0px;
+  border-top-color: black; border-style: solid;
+  border-bottom-color: #3D9BE9; border-style: solid;
+  padding: 10px 0px 10px 0px;
+  font-family: 'Comfortaa', cursive;
+  font-size: 26px;
+  margin: 0px 50px 0px 50px;
+}
+
+#subheading{
+  padding: -20px 0px 10px 0px;
+  font-family: 'Comfortaa', cursive;
+  font-size: 16px;
+  margin-left: 50px;
+}
+/* how do i get rid of the space between this??? */
+#info{
+  padding: 0px 0px 10px 0px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  margin-left: 50px;
+}
+
+#grid1{
+  display: grid;
+  grid-template-rows: 400px;
+  grid-template-columns: 400px 400px;
+  grid-column-gap: 20px;
+  border-width: 5px;
+  font-family: 'Open Sans', cursive;
+  font-size: 14px;
+}
+
+.reachout{
+  margin-left: 50px;
+  color: silver;
+  border: 1px; border-color: #3D9BE9; border-style: solid;
+  padding: 5px;
+  width: 450px;
+}
+
+#reachoutmessage{
+  margin-left: 50px;
+  color: silver;
+  border: 1px; border-color: #3D9BE9; border-style: solid;
+  padding: 5px;
+  width: 450px;
+  height: 150px;
+}
+
+#send{
+  margin-left: 50px;
+  color: black;
+}
+
+#map {
+  height: 400px;  /* The height is 400 pixels */
+}
+
 #footer{
   border-width: 1px 0px 0px 0px; border-color: black; border-style: solid;
   padding: 10px 0px 30px 0px;

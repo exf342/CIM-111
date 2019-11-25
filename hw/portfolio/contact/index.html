@@ -31,7 +31,20 @@
       </nav>
     </header>
     <main>
-
+      <p id="heading">Get in touch</p>
+      <p id="subheading">Emma Finn</p>
+      <p id="info">emmafinn98@gmail.com <br> Tel: 240-888-8495</p>
+      <section id="grid1">
+        <section>
+          <p class="reachout">Name*</p>
+          <p class="reachout">Email*</p>
+          <p class="reachout">Subject</p>
+          <p id="reachoutmessage">Message</p>
+          <p id="send">Send</p>
+        </section>
+        <section>
+          <div id="map"></div>
+        </section>
     </main>
     <footer>
       <a href="https://www.linkedin.com/in/creativemmafinn/"> <img src="../images/linkedin.jpg" alt="linkedin"> </a> <!-- why is my image not showingup??? -->
@@ -47,9 +60,17 @@
 
   $(document).ready(function(){
 
+// how do i insert a map???
 
-
-
+    function initMap() {
+    // The location of my UV
+      var uv= {lat: 25.714405, lng: -80.284923};
+    // The map, centered at uv
+      var map= new google.maps.Map(
+  document.getElementById('map'), {zoom: 6, center: uv});
+    // The marker, positioned at uv
+      var marker = new google.maps.Marker({position: uv, map: map});
+    }
 
 
 
