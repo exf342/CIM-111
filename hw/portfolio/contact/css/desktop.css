@@ -63,6 +63,11 @@ nav ul li:hover{
   font-size: 14px;
 }
 
+#section2 img{
+  width: 550px;
+  padding: 10px 0px 0px 125px;
+}
+
 .reachout{
   margin-left: 50px;
   color: silver;
