@@ -17,7 +17,6 @@ nav ul li{
     font-size: 12px;
     border-width: 1px 0px 0px 0px; border-color: black; border-style: solid;
     width: 185px;
-
   }
 
 nav ul li a{
@@ -64,8 +63,8 @@ nav ul li:hover{
 }
 
 #section2 img{
-  width: 550px;
-  padding: 10px 0px 0px 125px;
+  width: 500px;
+  padding: 10px 0px 0px 115px;
 }
 
 .reachout{
