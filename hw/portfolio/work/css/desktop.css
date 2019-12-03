@@ -38,8 +38,9 @@ nav ul li:hover{
   margin: 0px 50px 0px 50px;
 }
 
+/* why will nothing center on the page??? */
 #microsoft{
-  align-items: center;
+  align: center;
 }
 
 h3{
@@ -59,6 +60,15 @@ h3{
 #grid1 p{
   align-items: center;
   padding-bottom: 10px;
+}
+
+#grid1 img{
+  width: 340px;
+}
+
+#manifestotext{
+  display: grid;
+  align: center;
 }
 
 #footer{

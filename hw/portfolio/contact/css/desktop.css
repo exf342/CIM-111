@@ -44,7 +44,7 @@ nav ul li:hover{
   font-size: 16px;
   margin-left: 50px;
 }
-/* how do i get rid of the space between this??? */
+
 #info{
   padding: 0px 0px 10px 0px;
   font-family: 'Open Sans', sans-serif;
@@ -89,8 +89,9 @@ nav ul li:hover{
   color: black;
 }
 
+/* how the hell do i get my google map to show up instead of a screenshot? */
 #map {
-  height: 400px;  /* The height is 400 pixels */
+  height: 400px;
 }
 
 #footer{

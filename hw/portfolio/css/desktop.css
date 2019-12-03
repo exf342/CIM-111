@@ -8,7 +8,6 @@ header{
   text-align: justify;
 }
 
-/* how can i make everything scale as i shrink my window??? */
 nav ul li{
     list-style: none;
     display: inline-block;
@@ -55,7 +54,6 @@ footer img {
   width: 96%;
   align-items: center;
 }
-/* how do i get it to scale from both sides not just left */
 
 #grid1 ul li{
   list-style: none;
@@ -72,13 +70,12 @@ footer img {
 
 #grid2{
   display: grid;
-  padding: 0px 0px 30px 60px;
+  padding: 0px 0px 30px 40px;
   grid-template-rows: 220px;
-  grid-template-columns: 360px 360px 360px;
-  grid-column-gap: 25px;
+  grid-template-columns: 370px 370px 370px;
+  grid-column-gap: 20px;
 }
 
-/* how do i get these to scale??? */
 #aboutquote{
   background-color: black;
   color: white;
@@ -108,8 +105,7 @@ footer img {
   font-family: 'Open Sans', sans-serif;
   font-size: 12px;
   text-decoration: none;
-  position: absolute;
-  /* how to i get the buttons to be in the bottom right of the box???? */
+  margin-left: 210px;
 }
 
 .buttons:hover{
@@ -123,13 +119,12 @@ footer img {
 
 /* how to get image to be the correct size??? */
 #imageBox{
-  display: grid;
-  width: 360px;
+  width: 370px;
   height: 220px;
 }
 
-#imagebox img{
-  display: grid;
-  width: 160px; height: 140px;
-  object-fit: cover;
+#imageBox img{
+  height: 220px;
+  display: block;
+  margin: 0 auto;
 }

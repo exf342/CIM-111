@@ -56,7 +56,6 @@ main{
 }
 /* how do i get p to adjust with evrything else AND stay inside the box??? */
 
-/* how do i get it to fit in the box and just crop off the top instead of focusing on the middle??? */
 #grid1 img{
   display: grid;
   width: 160px; height: 140px;
