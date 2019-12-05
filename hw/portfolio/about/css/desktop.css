@@ -44,8 +44,8 @@ main{
 
 #grid1{
   display: grid;
-  grid-template-rows: 140px;
-  grid-template-columns: 200px 750px;
+  grid-template-rows: 1fr;
+  grid-template-columns: 200px 600px;
   grid-column-gap: 20px;
   border-width: 5px;
   border-top-color: black; border-style: solid;
@@ -54,7 +54,6 @@ main{
   font-family: 'Comfortaa', cursive;
   font-size: 26px;
 }
-/* how do i get p to adjust with evrything else AND stay inside the box??? */
 
 #grid1 img{
   display: grid;

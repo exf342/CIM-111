@@ -91,3 +91,12 @@ h1{
 .currentpage{
   border-width: 4px 0px 0px 0px;
 }
+
+section iframe{
+  display: block;
+  margin: 0 auto;
+}
+
+main{
+  text-align: center;
+}
