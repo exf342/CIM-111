@@ -133,8 +133,13 @@ footer a img {
   margin-top: 50px;
 }
 #button2{
+  margin-top: 210px;
+}
+
+#button3{
   margin-top: 50px;
 }
+
 .smaller{
   font-family: 'Open Sans', sans-serif;
   font-size: 12px;
