@@ -51,11 +51,16 @@
       </section>
       <section>
 
-        <div class="nyt">
-          <div><img src="images/nyt1.png" alt="ad 1"></div>
-          <div><img src="images/nyt2.png" alt="ad 2"></div>
-          <div><img src="images/nyt3.png" alt="ad 3"></div>
-        </div>
+
+      <div id="slider">
+        <a href="#" class="control_next">></a>
+        <a href="#" class="control_prev"><</a>
+        <ul>
+          <li><img src="images/nyt1.png"></li>
+          <li><img src="images/nyt2.png"></li>
+          <li><img src="images/nyt3.png"></li>
+        </ul>
+      </div>
 
 
       </section>
@@ -79,12 +84,44 @@
   $(document).ready(function(){
 
 
-    $('.nyt').slick();
+   	var slideCount = $('#slider ul li').length;
+   	var slideWidth = $('#slider ul li').width();
+   	var slideHeight = $('#slider ul li').height();
+   	var sliderUlWidth = slideCount * slideWidth;
 
+   	$('#slider').css({ width: slideWidth, height: slideHeight });
 
+   	$('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
 
+       $('#slider ul li:last-child').prependTo('#slider ul');
 
+       function moveLeft() {
+           $('#slider ul').animate({
+               left: + slideWidth
+           }, 200, function () {
+               $('#slider ul li:last-child').prependTo('#slider ul');
+               $('#slider ul').css('left', '');
+           });
+       };
 
+       function moveRight() {
+           $('#slider ul').animate({
+               left: - slideWidth
+           }, 200, function () {
+               $('#slider ul li:first-child').appendTo('#slider ul');
+               $('#slider ul').css('left', '');
+           });
+       };
+
+       $('a.control_prev').click(function(event) {
+           moveLeft();
+           event.preventDefault();
+       });
+
+       $('a.control_next').click(function(event) {
+           moveRight();
+           event.preventDefault();
+       });
 
 
       });
