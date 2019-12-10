@@ -26,7 +26,19 @@ nav ul li{
   margin-right: 35px;
 }
 
+#microsoft, #patagonia{
+  width: 380px;
+}
+
 #grid1{
   display: block;
   height: auto;
+}
+
+#manifestotext h2{
+  padding-bottom: 30px;
+}
+
+#slider img{
+  width: 380px;
 }
