@@ -1,1 +1,44 @@
 @import "desktop.css";
+
+/* most phones are around 400px range */
+/* only css in here needs to be changes from OG css page */
+
+header{
+  width: 390px;
+}
+
+main{
+  width: 390px;
+}
+
+footer{
+  width: 390px;
+  padding-left: 5px;
+}
+
+nav{
+  width: 350px
+}
+
+nav ul li{
+  display: block;
+  text-align: center;
+  margin-right: 35px;
+}
+
+#heading{
+  width: 390px;
+}
+
+#grid1{
+  display: block;
+  height: auto;
+}
+
+#grid1 p{
+  width: 390px;
+}
+
+#section2 iframe{
+  width: 350px;
+}
