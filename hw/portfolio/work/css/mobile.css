@@ -38,3 +38,13 @@ nav ul li{
 #manifestotext h2{
   padding-bottom: 30px;
 }
+
+#slider img{
+  width: 380px;
+}
+
+#slider{
+  width: 380px;
+}
+
+/* was able to shrink the image but not the slider controls??? */
